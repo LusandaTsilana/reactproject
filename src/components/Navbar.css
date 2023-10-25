@@ -1,0 +1,23 @@
+#navbar {
+  background-color: rgb(125, 110, 179);
+}
+
+.me-auto {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 70px;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-size: large;
+}
