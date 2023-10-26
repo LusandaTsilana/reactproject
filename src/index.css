@@ -4,3 +4,8 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}

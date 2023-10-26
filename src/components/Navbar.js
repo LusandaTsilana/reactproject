@@ -6,23 +6,21 @@ import logo from "../images/insta.png";
 
 export const Navbar = () => {
   return (
-    <div id="navbar">
-      <Container>
-        <Nav className="me-auto">
-          <div>
-            <img src={logo} alt="logo" />
-          </div>
+    <Container id="navbar">
+      <Nav className="me-auto">
+        <div>
+          <img src={logo} alt="logo" />
+        </div>
 
-          <div className="link">
-            <Link to="/" className="link">
-              Home
-            </Link>
-            <Link to="/login" className="link">
-              Login
-            </Link>
-          </div>
-        </Nav>
-      </Container>
-    </div>
+        <div className="link">
+          <Link to="/" className="link">
+            Home
+          </Link>
+          <Link to="/login" className="link">
+            Login
+          </Link>
+        </div>
+      </Nav>
+    </Container>
   );
 };

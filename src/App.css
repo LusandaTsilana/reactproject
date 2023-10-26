@@ -7,11 +7,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
 h1 {
   text-align: center;
 }
