@@ -3,10 +3,16 @@ import { auth, provider } from "../config/firebase";
 import { signInWithPopup } from "firebase/auth";
 import "../pages/login.css";
 
+import { useNavigate } from "react-router-dom";
+
 export const Login = () => {
-  const signInWithGoogle = async () => {
+  //redirected to home page after login/signin
+
+  const navigate = useNavigate();
+  const loginWithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);
     console.log(result);
+    navigate("/");
   };
   return (
     <div>
@@ -25,7 +31,7 @@ export const Login = () => {
         <div>
           <p>OR</p>
 
-          <button onClick={signInWithGoogle}>Login with Google</button>
+          <button onClick={loginWithGoogle}>Login with Google</button>
         </div>
       </form>
     </div>
